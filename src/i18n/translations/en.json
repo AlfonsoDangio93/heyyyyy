@@ -1,0 +1,473 @@
+{
+  "header": {
+    "aziende": "Prevention days",
+    "coperture": "Coverage",
+    "navigatoreSanitario": "Health Navigator",
+    "struttureSanitarie": "Healthcare Facilities",
+    "chiSiamo": "About Us",
+    "parlaConNoi": "Talk to us",
+    "areaRiservata": "Reserved Area",
+    "accedi": "Log in",
+    "home": "Home",
+    "comeFunziona": "How it works",
+    "menuLabel": "Open menu",
+    "switchTo": "Switch to"
+  },
+  "footer": {
+    "slogan": "Revolutionizing workplace health",
+    "menu": "Menu",
+    "legale": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "terminiCondizioni": "Terms and Conditions",
+    "contatti": "Contact",
+    "email": "Email: ciao@heylucy.it",
+    "copyright": "HeyLucy – Revolutionizing workplace health"
+  },
+  "hero": {
+    "title": "Health coverage for your team, easy to use.",
+    "subtitle": "Start from the CCNL fund you already pay for, add only what is missing",
+    "bullet1": "Your CCNL health fund used to the full",
+    "bullet2": "A human health concierge, not a generic call centre",
+    "bullet3": "Over 80% of employees take up prevention",
+    "cta": "TALK TO US",
+    "ctaSecondary": "EXPLORE THE PLATFORM"
+  },
+  "solutions": {
+    "title": "Our solutions for corporate health",
+    "cta": "TALK TO US",
+    "card1": {
+      "title": "Integrative Health Coverage",
+      "description": "More protection for employees, with optimized costs for the company."
+    },
+    "card2": {
+      "title": "Health Navigator",
+      "description": "The digital tool that makes accessing your company health benefits easy and immediate."
+    }
+  },
+  "problem": {
+    "title": "Your team's health matters, but today's tools aren't enough.",
+    "card1": {
+      "title": "Supplementary Health Funds",
+      "description": "Underutilized and hard to navigate"
+    },
+    "card2": {
+      "title": "Corporate screening and check-ups",
+      "description": "cost on average €500 per employee per check-up"
+    },
+    "card3": {
+      "title": "Supplementary insurance",
+      "description": "costs on average €1,000 per employee"
+    }
+  },
+  "coperture": {
+    "section1": {
+      "title": "What we look at in the assessment",
+      "item1": {
+        "title": "Active coverage",
+        "subtitle": "We verify existing funds, policies and benefits"
+      },
+      "item2": {
+        "title": "Overlaps",
+        "subtitle": "We identify waste and inefficiencies"
+      },
+      "item3": {
+        "title": "Real needs",
+        "subtitle": "We understand what employees really need"
+      }
+    },
+    "section2": {
+      "title": "We design a health plan built around your company.",
+      "text": "We optimize what you already have and integrate only what you need. This way you improve protection for employees while keeping costs under control.",
+      "kicker": "The outcome"
+    },
+    "cta": "BOOK A FREE ASSESSMENT",
+    "hero": {
+      "title": "We start from the coverage you already have.",
+      "subtitle": "Your company already pays for health coverage. We start there: what it actually contains, where it overlaps and what is genuinely missing.",
+      "cta": "Find out more",
+   "imageAlt": "Supplementary health fund documents on a desk"
+    }
+  },
+  "fromMarginal": {
+    "title": "HeyLucy transforms your health fund from a marginal benefit into real value for employees",
+    "screening": {
+      "title": "Screening days",
+      "description": "Medical visits organized by us, near your company, paid for by the corporate health fund"
+    },
+    "sportello": {
+      "title": "Health desk",
+      "description": "A constant support channel to understand coverage, book appointments, get reimbursements and find partner clinics"
+    }
+  },
+  "whyWelfare": {
+    "title": "Healthy team, healthy company.",
+    "subtitle": "Corporate health welfare: an increasingly appreciated and requested benefit.",
+    "benefit1": "Shows genuine care for people",
+    "benefit2": "Fosters a healthy and collaborative environment",
+    "benefit3": "Retains talent",
+    "cta": "TALK TO US"
+  },
+  "calendar": {
+    "title": "We convert your fund's prevention into a prevention calendar",
+    "q1": {
+      "months": "(January - March)",
+      "title": "General check-up",
+      "description": "Blood and urine tests for an overall assessment."
+    },
+    "q2": {
+      "months": "(April - June)",
+      "title": "Cancer prevention",
+      "description": "Examination and tests to early detect any signals that need follow-up."
+    },
+    "q3": {
+      "months": "(July - September)",
+      "title": "Skin and mole screening",
+      "description": "Skin and mole check to detect abnormalities at an early stage."
+    },
+    "q4": {
+      "months": "(October - December)",
+      "title": "Oral health",
+      "description": "Hygiene and check-up to maintain oral wellness."
+    },
+    "note": "Demonstrative calendar. The final version will be agreed with the company.",
+    "prevLabel": "Previous month",
+    "nextLabel": "Next month"
+  },
+  "screeningProcess": {
+    "title": "How a screening day works",
+    "subtitle": "Confirm your participation and show up at the appointment: we take care of everything else.",
+    "step1": "Join the campaign",
+    "step2": "Receive the appointment",
+    "step3": "Get a reminder",
+    "step4": "Show up at the healthcare facility"
+  },
+  "support": {
+    "title": "Health desk",
+    "description": "In addition to the prevention plan, we offer constant support to navigate healthcare bureaucracy: insurance, tickets, reimbursements"
+  },
+  "pricing": {
+    "title": "Our prices*",
+    "subtitle": "Want a customized prevention calendar? Contact us",
+    "annual": {
+      "title": "Annual Payment",
+      "price": "~€250",
+      "perEmployee": "per employee / year"
+    },
+    "badge": "Best value!",
+    "feature1": "4 screening days",
+    "feature2": "Health desk",
+    "feature3": "Prevention newsletter",
+    "cta": "TALK TO US",
+    "asteriskNote": "* Price for companies with 30+ employees.\nHave a smaller team? We'll be happy to prepare a custom offer for you."
+  },
+  "comparison": {
+    "title": "The advantage of choosing HeyLucy",
+    "heylucy": "HeyLucy",
+    "standard": "Standard healthcare facility",
+    "row1": {
+      "feature": "Prevention package",
+      "heylucy": "Complete",
+      "standard": "Complete"
+    },
+    "row2": {
+      "feature": "Annual cost",
+      "heylucy": "From ~€250",
+      "standard": "Over €700"
+    },
+    "row3": {
+      "feature": "Employee support",
+      "heylucy": "Continuous assistance for booking and reimbursements",
+      "standard": "No post-visit support"
+    },
+    "row4": {
+      "feature": "HR effort",
+      "heylucy": "Zero: we manage everything",
+      "standard": "High: HR coordinates and organizes"
+    }
+  },
+  "testimonials": {
+    "title": "What they say about HeyLucy",
+    "quote1": "It's been great: getting screened is incredibly easy, they guide you every step of the way. I really wouldn't know what could be improved!",
+    "quote2": "Knowing that all my check-ups are in one place takes every worry away: I feel looked after all year round and I know I won't risk forgetting them anymore.",
+    "quote3": "Before HeyLucy, I had almost forgotten I had a supplementary health fund. Now I finally understand what it covers and how to use it: it was like receiving a new company benefit overnight.",
+    "quote4": "I needed an eye doctor appointment and thanks to HeyLucy I discovered it was already covered. Saved €100 without having to change doctors. Super useful.",
+    "attribution1": "Employee in Turin (12-person company) — EASI Fund",
+    "attribution2": "Employee in Milan (100-person company) — EST Fund",
+    "attribution3": "Employee in Turin (70-person company) — ENFEA Salute Fund",
+    "attribution4": "Employee in Milan (100-person company) — EST Fund"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "q1": {
+      "question": "How much work does it require from HR?",
+      "answer": "Just the time to send a notice email to employees. After that, we handle everything: communication to employees, bookings, reimbursements."
+    },
+    "q2": {
+      "question": "What do employees actually get?",
+      "answer": "4 prevention exams already scheduled throughout the year, with just one click and no extra costs."
+    },
+    "q3": {
+      "question": "How much does it cost?",
+      "answer": "From around €250 per year per employee."
+    },
+    "q4": {
+      "question": "Does anything change for corporate health funds?",
+      "answer": "We don't replace anything: we unlock and make usable the benefits already provided by your fund, without modifying contracts or coverage."
+    },
+    "cta": "TALK TO US"
+  },
+  "clinicHero": {
+    "title": "We bring new patients to your facility",
+    "titleLine2": "continuously and in an organized way",
+    "subtitle": "We collaborate with companies to periodically direct groups of people to partner healthcare facilities.",
+    "bottomText": "You focus on quality of care, we handle patient flow management.",
+    "cta": "Join the HeyLucy network"
+  },
+  "howItWorks": {
+    "title": "How the collaboration with HeyLucy works",
+    "step1": {
+      "title": "Plan",
+      "description": "We agree together on dates, slots and services."
+    },
+    "step2": {
+      "title": "Deliver",
+      "description": "We bring the patients and eliminate no-shows with reminders."
+    },
+    "step3": {
+      "title": "Retain",
+      "description": "We turn the employee into a recurring patient of your clinic."
+    }
+  },
+  "benefits": {
+    "title": "Why join the HeyLucy network",
+    "benefit1": "New patients in a recurring and organized way",
+    "benefit2": "Reduced no-shows thanks to reminders and centralized management",
+    "benefit3": "Scheduled flows that facilitate agenda organization"
+  },
+  "clinicCTA": {
+    "title": "Want to become a partner healthcare facility?",
+    "subtitle": "Join the HeyLucy network and receive groups of patients from the companies we work with.",
+    "cta": "Join the HeyLucy network"
+  },
+  "chiSiamo": {
+    "title": "About Us",
+    "paragraph1": "We are a company born in 2025 from the Mamazen startup studio together with Francesco Chiarpenello and Andrea Zanovello.",
+    "paragraph2": "Combining expertise in healthcare and digital products, we work to transform how employees and companies experience their health benefits. We want to make immediate what is complex today, optimize spending and facilitate access to care.",
+    "paragraph3": "We believe in simpler and more sustainable access to health, where benefits don't remain unused but become concrete help for people. And every day we commit to making this vision a reality.",
+    "imageAlt": "The HeyLucy team"
+  },
+  "sportello": {
+    "title": "Health Desk",
+    "subtitle": "Need support? We're here to help you make the most of your health plan.",
+    "hours": "Hours: Monday - Friday, 08:30 - 19:00",
+    "contactTitle": "What you can contact us for",
+    "service1": {
+      "title": "Visits and Diagnostics",
+      "description": "We check if a visit or exam is covered before you book."
+    },
+    "service2": {
+      "title": "Prevention and Check-ups",
+      "description": "Info on the screening calendar and additional packages."
+    },
+    "service3": {
+      "title": "Reimbursements",
+      "description": "Already incurred an expense? We help you start the process."
+    },
+    "service4": {
+      "title": "Family Plan",
+      "description": "All the info to extend coverage to your family members."
+    },
+    "service5": {
+      "title": "Coverage Questions",
+      "description": "Complex or unclear rules? We help you understand in detail what your Fund includes."
+    },
+    "chooseContact": "Choose how to contact us",
+    "enableCheckboxes": "Check the boxes below to enable your choice",
+    "privacyCheckbox": "I have read and understood the",
+    "privacyPolicy": "Privacy Policy",
+    "and": "and I fully accept the",
+    "serviceConditions": "Service Conditions",
+    "healthDataCheckbox": "I consent to the processing of personal data regarding my health status in order to receive support in using my supplementary health fund.",
+    "whatsappAlt": "Contact us on WhatsApp",
+    "whatsappText": "Or write to +39 371 562 0380",
+    "emailAlt": "Contact us via Email",
+    "emailText": "Or write to sportellosanitario@heylucy.it"
+  },
+  "home": {
+    "clients": {
+      "title": "Some of our clients"
+    },
+    "platform": {
+      "title": "The platform",
+      "card1": {
+        "title": "Smart coverage search",
+        "description": "An advanced AI-powered search engine trained on your coverage (CCNL health funds, welfare, etc). It gives clear, instant answers to specific questions, so nobody has to read through long contracts.",
+        "imageAlt": "Smart search interface for health coverage"
+      },
+      "card2": {
+        "title": "Human Health Concierge",
+        "description": "A direct, human support channel. Our experts guide employees step by step through complex questions, appointment booking and filing reimbursement claims correctly.",
+        "imageAlt": "Example of a conversation with the HeyLucy Health Concierge"
+      },
+      "card3": {
+        "title": "Prevention tracking",
+        "description": "A personalised digital map that keeps track of the free annual check-ups included in your CCNL health fund. An active tool to monitor your health and never waste the fund's benefits.",
+        "imageAlt": "Health prevention tracking dashboard"
+      },
+      "card4": {
+        "title": "Exclusive partnerships and discounts",
+        "description": "Access to dedicated preferential rates for services not fully covered by the company fund, with significant discounts on specialist visits, diagnostic tests and nutritionists.",
+        "imageAlt": "Exclusive partnerships and discounts with Humanitas, Balanced and Noritura"
+      }
+    },
+    "advantage": {
+      "title": "The advantage of choosing HeyLucy",
+      "heylucy": "HeyLucy",
+      "standard": "Standard health policy",
+      "row1": {
+        "feature": "Average annual cost",
+        "heylucy": "From ~€250 / employee",
+        "standard": "Over €700 / employee"
+      },
+      "row2": {
+        "feature": "Prevention take-up",
+        "heylucy": "Over 80% of employees",
+        "standard": "Less than 20% of employees"
+      },
+      "row3": {
+        "feature": "CCNL health fund",
+        "heylucy": "Included in the HeyLucy platform",
+        "standard": "Forgotten"
+      },
+      "row4": {
+        "feature": "Support on coverage",
+        "heylucy": "Dedicated human consultant",
+        "standard": "Generic call centre"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": {
+        "question": "Do you replace our category health fund (e.g. Fondo EST, Metasalute, Unisalute)?",
+        "answer": "No, we make the most of it. We don't replace the CCNL fund your company already pays for by law. On the contrary, we give employees an intuitive platform that guides them step by step to use 100% of the benefits they already have, turning a mandatory cost into a benefit that is genuinely perceived and used."
+      },
+      "q2": {
+        "question": "How does extra coverage work alongside the existing fund?",
+        "answer": "In perfect synergy and without overlaps. We identify the services excluded or uncovered by your category fund and add only the complementary policies that are actually needed. For the employee the experience is completely seamless: one platform, one Concierge, as if there were a single large policy."
+      },
+      "q3": {
+        "question": "How do you cost less than a traditional health policy?",
+        "answer": "By removing waste. Traditional policies (often over €700 per year per employee) make you pay again for services your CCNL fund would already cover. HeyLucy first guides the employee to use the existing coverage and adds complementary protection only where it is really needed, delivering complete protection from just ~€250 a year."
+      },
+      "q4": {
+        "question": "How does the human Health Consultant work and when does it step in?",
+        "answer": "It is a support team dedicated to the most complex and convoluted cases. It steps in when bureaucracy risks blocking the employee: for example when a facility asks for a payment for a service that should be covered, or when the insurance wording is impenetrable. The consultant takes ownership of the problem and guides the person step by step to a solution."
+      },
+      "q5": {
+        "question": "How does the Prevention Area inside the platform work?",
+        "answer": "It is the section where all the prevention covered by the fund is mapped out. The app flags the free check-ups and tests available to the employee and links straight to the booking process. The platform tells you when it's time for a screening and walks you through how to use it without making mistakes."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to give health welfare real value?",
+      "subtitle": "In 30 minutes we'll show you how your employees will finally use the coverage your company already pays for.",
+      "cta": "TALK TO US"
+    },
+    "reviews": {
+      "title": "What people say about HeyLucy on Trustpilot",
+      "scoreLabel": "Great",
+      "cta": "Read all the reviews on"
+    },
+    "coverageExtra": {
+      "title": "Extra coverage",
+      "subtitle": "We add to your supplementary health fund only the coverage that is missing, without duplicating services and costs.",
+      "yourFund": "Your fund",
+      "withHeylucy": "With HeyLucy",
+      "legendBase": "Starting point",
+      "legendExtra": "Tailored add-ons",
+      "hint": "Tap to remove or put back the add-ons",
+      "note": "Only what is missing: surgery, dental, family or anything else!!",
+      "badge": "Full coverage at ⅓ of the price",
+      "hub": "One single point of contact to get the most out of",
+      "branch1": {
+        "title": "The CCNL health fund you already have",
+        "detail": "(Fondo Est, Metasalute, etc)"
+      },
+      "branch2": {
+        "title": "Tailored supplementary coverage",
+        "detail": "by HeyLucy"
+      }
+    },
+    "press": {
+      "title": "As featured in:"
+    },
+    "statement": {
+      "title": "The fund you already pay for, finally used.",
+      "text": "Every company pays into a health fund by law, and almost no employee knows what is in it. We make it readable on one screen, and add only the coverage that is missing."
+    },
+    "showcase": {
+      "label": "What changes for your team"
+    }
+  },
+  "navigatore": {
+    "hero": {
+      "title": "We make health simple for your employees.",
+      "subtitle": "Remove every bureaucratic barrier between your team and their health coverage. With HeyLucy, using company benefits becomes immediate and frictionless. Because a healthy team is the engine of a healthy company.",
+      "cta": "EXPLORE THE PLATFORM",
+      "imageAlt": "Team of professionals working together on company prevention"
+    },
+    "value": {
+      "title": "A benefit that actually gets used, not just one on paper.",
+      "subtitle": "Health plans and supplementary funds often go unused because of bureaucratic complexity. With HeyLucy's Health Navigator:",
+      "item1": "You increase how much your team values the company welfare package.",
+      "item2": "You cut the time employees lose on paperwork and reimbursement claims.",
+      "item3": "You build a real, trackable culture of prevention inside your company."
+    },
+    "cta": {
+      "title": "Transform how health is managed in your company.",
+      "subtitle": "We optimise the benefits you already have and give your employees the definitive tool to use them without stress.",
+      "cta": "BOOK A DEMO"
+    },
+    "platform": {
+      "title": "How the platform works",
+      "subtitle": "Four tools. Below you will find what each one does, explained in plain words.",
+      "card1": {
+        "title": "Smart coverage search",
+        "lead": "Ask your question the way you would ask a colleague and get an answer in seconds.",
+        "body": "Your health fund rulebook runs to dozens of pages and nobody reads it. On the platform you type a normal question, for example “how much do I get back for a dental cleaning”. The system searches your fund's official documents and answers in plain language.",
+        "point1": "Ask in your own words, no technical terms needed",
+        "point2": "The answer arrives in seconds, not in two days",
+        "point3": "Every answer points to the official document it came from, so you can check it"
+      },
+      "card2": {
+        "title": "Human Health Concierge",
+        "lead": "When the paperwork gets stuck, a real person answers you.",
+        "body": "The platform handles the simple questions. For complicated cases there is a real person. You need one when a clinic asks you to pay for something the fund should cover, or when the form makes no sense. You write, one of our people takes the problem on and stays with you until it is solved.",
+        "point1": "Write on WhatsApp, nothing to install",
+        "point2": "A person replies, not an automated message",
+        "point3": "They stay with you to the solution instead of passing you to another desk"
+      },
+      "card3": {
+        "title": "Prevention tracking",
+        "lead": "See on one screen which free check-ups you still have this year.",
+        "body": "Your fund already pays for some prevention tests every year. If you do not book them by December you lose them, and most people do lose them because they never knew they had them. The platform shows the list of check-ups you are entitled to, marks which ones you have done and reminds you when it is time to book the next one.",
+        "point1": "The list of check-ups in your fund is ready, you do not have to hunt for it",
+        "point2": "See at a glance what you have done and what is missing",
+        "point3": "Get a reminder before the year runs out"
+      },
+      "card4": {
+        "title": "Exclusive partnerships and discounts",
+        "lead": "If the fund does not cover everything, you still pay less.",
+        "body": "Some services are only partly covered by the fund, others not at all. For those we have direct agreements with clinics and specialists at reduced prices. You book from the platform and the discount is already applied to the price you see.",
+        "point1": "Reduced prices on specialist visits and diagnostic tests",
+        "point2": "The discount is already applied, you do not have to ask anyone",
+        "point3": "It also covers nutritionists and services the fund does not pay for"
+      }
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you were looking for doesn't exist or has been moved.",
+    "cta": "Back to home"
+  }
+}

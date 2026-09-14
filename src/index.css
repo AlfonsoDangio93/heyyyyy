@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 180 65% 24%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 180 60% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 60% 15%;
+
+    /* HeyLucy Brand Colors */
+    --primary: 180 65% 24%; /* Dark cyan #156669 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 203 48% 80%; /* Light azure #b8d2e4 */
+    --secondary-foreground: 180 60% 15%;
+    --secondary-strong: 203 40% 68%; /* Deep azure #93b6cf - comparison column */
+    --press: 204 23% 65%; /* #90a9ba - fascia delle prove sociali */
+    --surface: 30 14% 90%; /* #e8e4e0 - grigio caldo di profondita' */
+    --surface-deep: 30 12% 85%; /* #ded8d3 - bordo inferiore della fascia */
+    --secondary-pale: 201 44% 94%; /* #e8f1f6 - azzurro pallido, respiro fra le sezioni chiare */
+    --graphite: 202 15% 44%; /* Slate #5f7480 - segmento integrazioni del grafico */
+
+    --accent: 30 56% 96.5%; /* Cream #fbf6f1 */
+    --accent-foreground: 180 60% 15%;
+
+    --muted: 203 48% 90%;
+    /* 36% invece di 45%: con la base chiara del sito il vecchio valore dava
+       3.5:1 su crema, sotto la soglia AA. Ora e' 5.1:1. */
+    --muted-foreground: 180 22% 36%;
+
+    /* Highlighted column / emphasis blue */
+    --highlight: 208 47% 52%; /* #4a87be */
+    --highlight-foreground: 0 0% 100%;
+
+    /* Semantic status colors */
+    --success: 150 100% 26%; /* #008744 */
+    --warning: 38 92% 50%; /* #f59e0b */
+    --danger: 355 77% 52%; /* #e32636 */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Filo sottile per staccare le card bianche dai fondi chiari: bianco su
+       crema fa 1.07:1, praticamente invisibile senza un bordo. */
+    --card-border: 180 65% 24%;
+    --border: 203 30% 85%;
+    --input: 203 30% 85%;
+    --ring: 180 65% 24%;
+
+    --radius: 1rem;
+    --radius-card: 2.25rem; /* 36px, blocchi e card grandi */
+    --radius-pill: 200px;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(30 56% 96.5%), hsl(203 48% 90%));
+    /* Ombre tinte del petrolio di brand, non grigie: l'ombra neutra su una
+       palette calda si legge sporca. Lo stato hover e' molto piu' ampio dello
+       stato di riposo, cosi' il sollevamento si sente. */
+    --shadow-card: 0 2px 12px -2px hsl(180 65% 24% / 0.08);
+    --shadow-soft: 0 24px 48px -20px hsl(180 65% 24% / 0.26), 0 8px 20px -12px hsl(180 65% 24% / 0.14);
+    --shadow-float: 0 14px 32px -10px hsl(180 65% 24% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Gli spostamenti verso un'ancora scorrono invece di saltare.
+     ⚠️ Dentro la media query: `scroll-behavior: smooth` non guarda da solo
+     le preferenze di movimento, e uno scorrimento lungo e' proprio cio' che
+     chi ha ridotto le animazioni non vuole. */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}

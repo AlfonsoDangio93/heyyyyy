@@ -1,0 +1,473 @@
+{
+  "header": {
+    "aziende": "Giornate di prevenzione",
+    "coperture": "Coperture",
+    "navigatoreSanitario": "Navigatore Sanitario",
+    "struttureSanitarie": "Strutture Sanitarie",
+    "chiSiamo": "Chi siamo",
+    "parlaConNoi": "Parla con noi",
+    "areaRiservata": "Area Riservata",
+    "accedi": "Accedi",
+    "home": "Home",
+    "comeFunziona": "Come funziona",
+    "menuLabel": "Apri il menu",
+    "switchTo": "Passa a"
+  },
+  "footer": {
+    "slogan": "Rivoluzioniamo la salute in azienda",
+    "menu": "Menu",
+    "legale": "Legale",
+    "privacyPolicy": "Privacy Policy",
+    "terminiCondizioni": "Termini e Condizioni",
+    "contatti": "Contatti",
+    "email": "Email: ciao@heylucy.it",
+    "copyright": "HeyLucy – Rivoluzioniamo la salute in azienda"
+  },
+  "hero": {
+    "title": "Coperture sanitarie per il tuo team, facili da usare.",
+    "subtitle": "Parti dal fondo CCNL che paghi già, aggiungi solo quello che manca",
+    "bullet1": "Fondo sanitario CCNL sfruttato al 100%",
+    "bullet2": "Concierge sanitario umano, non un call center",
+    "bullet3": "Oltre l'80% dei dipendenti fa prevenzione",
+    "cta": "PARLA CON NOI",
+    "ctaSecondary": "SCOPRI LA PIATTAFORMA"
+  },
+  "solutions": {
+    "title": "Le nostre soluzioni per la salute in azienda",
+    "cta": "PARLA CON NOI",
+    "card1": {
+      "title": "Coperture sanitarie Integrative",
+      "description": "Più tutele per i dipendenti, con costi ottimizzati per l'azienda."
+    },
+    "card2": {
+      "title": "Navigatore sanitario",
+      "description": "Lo strumento digitale che rende l'accesso ai benefit sanitari aziendali facile e immediato."
+    }
+  },
+  "problem": {
+    "title": "La salute del tuo team è importante, ma gli strumenti di oggi non bastano.",
+    "card1": {
+      "title": "I Fondi sanitari integrativi CCNL",
+      "description": "Sono poco utilizzati e difficili da usare"
+    },
+    "card2": {
+      "title": "Screening e checkup aziendali",
+      "description": "costano in media 500 € a checkup per dipendente"
+    },
+    "card3": {
+      "title": "Assicurazioni integrative",
+      "description": "costano in media 1000 € a dipendente"
+    }
+  },
+  "coperture": {
+    "section1": {
+      "title": "Cosa guardiamo nell'assessment",
+      "item1": {
+        "title": "Coperture attive",
+        "subtitle": "Verifichiamo fondi, polizze e benefit esistenti"
+      },
+      "item2": {
+        "title": "Sovrapposizioni",
+        "subtitle": "Identifichiamo sprechi e inefficienze"
+      },
+      "item3": {
+        "title": "Bisogni reali",
+        "subtitle": "Capiamo cosa serve davvero ai dipendenti"
+      }
+    },
+    "section2": {
+      "title": "Disegniamo un piano salute costruito sulla tua azienda.",
+      "text": "Ottimizziamo ciò che hai già e integriamo solo ciò che serve. Così migliori la protezione per i dipendenti mantenendo i costi sotto controllo.",
+      "kicker": "Il risultato"
+    },
+    "cta": "PRENOTA UN ASSESSMENT GRATUITO",
+    "hero": {
+      "title": "Analizziamo le coperture che hai già.",
+      "subtitle": "La tua azienda paga già delle coperture sanitarie. Partiamo da lì: cosa contengono davvero, dove si sovrappongono e cosa manca.",
+      "cta": "Scopri di più",
+   "imageAlt": "Documenti di un fondo sanitario integrativo sulla scrivania"
+    }
+  },
+  "fromMarginal": {
+    "title": "HeyLucy trasforma il tuo fondo sanitario da benefit marginale a valore reale per i dipendenti",
+    "screening": {
+      "title": "Giornate di prevenzione",
+      "description": "Visite mediche organizzate da noi, vicino alla tua azienda, pagate dal fondo sanitario aziendale"
+    },
+    "sportello": {
+      "title": "Sportello sanitario",
+      "description": "Un canale di supporto costante per capire le coperture, prenotare, ottenere rimborsi e trovare cliniche convenzionate"
+    }
+  },
+  "whyWelfare": {
+    "title": "Team in salute, azienda sana.",
+    "subtitle": "Il welfare sanitario aziendale: un benefit sempre più apprezzato e richiesto.",
+    "benefit1": "Trasmette attenzione reale alle persone",
+    "benefit2": "Favorisce un clima sano e collaborativo",
+    "benefit3": "Trattiene i talenti",
+    "cta": "PARLA CON NOI"
+  },
+  "calendar": {
+    "title": "Convertiamo la prevenzione del tuo fondo in un calendario di prevenzione",
+    "q1": {
+      "months": "(gennaio - marzo)",
+      "title": "Check-up generale",
+      "description": "Esami del sangue e delle urine per una valutazione complessiva."
+    },
+    "q2": {
+      "months": "(aprile - giugno)",
+      "title": "Prevenzione oncologica",
+      "description": "Visita ed esami per individuare precocemente eventuali segnali da approfondire."
+    },
+    "q3": {
+      "months": "(luglio - settembre)",
+      "title": "Screening pelle e nei",
+      "description": "Controllo della pelle e dei nei per rilevare anomalie in fase precoce."
+    },
+    "q4": {
+      "months": "(ottobre - dicembre)",
+      "title": "Salute orale",
+      "description": "Igiene e controllo per mantenere il benessere della bocca."
+    },
+    "note": "Calendario dimostrativo. La versione definitiva sarà concordata con l'azienda.",
+    "prevLabel": "Mese precedente",
+    "nextLabel": "Mese successivo"
+  },
+  "screeningProcess": {
+    "title": "Come funziona una giornata di prevenzione",
+    "subtitle": "Conferma la partecipazione e presentati all'appuntamento: a tutto il resto pensiamo noi.",
+    "step1": "Aderisci alla campagna",
+    "step2": "Ricevi l'appuntamento",
+    "step3": "Ricevi un reminder",
+    "step4": "Ti presenti in struttura sanitaria"
+  },
+  "support": {
+    "title": "Sportello sanitario",
+    "description": "Oltre al piano di prevenzione offriamo supporto costante per muoversi nella burocrazia della sanità: assicurazioni, ticket, rimborsi"
+  },
+  "pricing": {
+    "title": "I nostri prezzi*",
+    "subtitle": "Vuoi un calendario prevenzione personalizzato? Contattaci",
+    "annual": {
+      "title": "Pagamento Annuale",
+      "price": "~250 €",
+      "perEmployee": "a dipendente / anno"
+    },
+    "badge": "Più conveniente!",
+    "feature1": "4 giornate di prevenzione",
+    "feature2": "Sportello sanitario",
+    "feature3": "Newsletter prevenzione",
+    "cta": "PARLA CON NOI",
+    "asteriskNote": "* Prezzo riferito ad aziende con 30+ dipendenti.\nHai un team più piccolo? Saremo felici di prepararti un'offerta su misura."
+  },
+  "comparison": {
+    "title": "Il vantaggio di scegliere HeyLucy",
+    "heylucy": "HeyLucy",
+    "standard": "Struttura sanitaria standard",
+    "row1": {
+      "feature": "Pacchetto prevenzione",
+      "heylucy": "Completo",
+      "standard": "Completo"
+    },
+    "row2": {
+      "feature": "Costo annuale",
+      "heylucy": "Da ~250 €",
+      "standard": "Oltre 700 €"
+    },
+    "row3": {
+      "feature": "Supporto al dipendente",
+      "heylucy": "Assistenza continua su prenotazione e rimborsi",
+      "standard": "Nessun supporto post-visita"
+    },
+    "row4": {
+      "feature": "Impegno per l'HR",
+      "heylucy": "Zero: gestiamo tutto noi",
+      "standard": "Alto: l'HR coordina e organizza"
+    }
+  },
+  "testimonials": {
+    "title": "Cosa dicono di HeyLucy",
+    "quote1": "Ci troviamo davvero bene: fare prevenzione è facilissimo, ti guidano passo a passo. Non saprei davvero cosa si potrebbe migliorare!",
+    "quote2": "Sapere che i miei controlli sono tutti in un unico posto mi toglie ogni pensiero: mi sento seguita tutto l'anno e so che non rischio più di dimenticarli.",
+    "quote3": "Prima di HeyLucy, mi ero quasi dimenticato di avere un fondo sanitario integrativo. Ora ho capito finalmente cosa copre e come usarlo.",
+    "quote4": "Dovevo fare la visita dall'oculista e grazie a HeyLucy ho scoperto che era già convenzionata. Risparmiati 100€ senza dover cambiare medico. Super utile.",
+    "attribution1": "Dipendente a Torino (Azienda 12 dip.) — Fondo EASI",
+    "attribution2": "Dipendente a Milano (Azienda 100 dip.) — Fondo EST",
+    "attribution3": "Dipendente a Torino (Azienda 70 dip.) — Fondo ENFEA Salute",
+    "attribution4": "Dipendente a Milano (Azienda 100 dip.) — Fondo EST"
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "q1": {
+      "question": "Quanto lavoro richiede all'HR?",
+      "answer": "Il tempo di mandare una mail di avviso ai dipendenti. Dopodichè gestiamo tutto noi: la comunicazione ai dipendenti, le prenotazioni, i rimborsi."
+    },
+    "q2": {
+      "question": "Cosa ottengono concretamente i dipendenti?",
+      "answer": "4 esami di prevenzione già programmati durante l'anno, con un solo clic e senza costi extra."
+    },
+    "q3": {
+      "question": "Quanto costa?",
+      "answer": "A partire da circa 250 € l'anno a dipendente."
+    },
+    "q4": {
+      "question": "Cambia qualcosa per i fondi sanitari aziendali?",
+      "answer": "Non sostituiamo nulla: sblocchiamo e rendiamo utilizzabili i benefit già previsti dal tuo fondo, senza modificare contratti o coperture."
+    },
+    "cta": "PARLA CON NOI"
+  },
+  "clinicHero": {
+    "title": "Portiamo nuovi pazienti alla tua struttura",
+    "titleLine2": "in modo continuo e organizzato",
+    "subtitle": "Collaboriamo con le aziende per indirizzare periodicamente gruppi di persone verso le strutture sanitarie partner.",
+    "bottomText": "Tu ti concentri sulla qualità dell'assistenza, noi ci occupiamo della gestione dei flussi.",
+    "cta": "Entra nel network HeyLucy"
+  },
+  "howItWorks": {
+    "title": "Come funziona la collaborazione con HeyLucy",
+    "step1": {
+      "title": "Pianifica",
+      "description": "Concordiamo insieme date, slot e prestazioni."
+    },
+    "step2": {
+      "title": "Eroga",
+      "description": "Noi portiamo i pazienti e azzeriamo i no-show grazie ai reminder."
+    },
+    "step3": {
+      "title": "Fidelizza",
+      "description": "Trasformiamo il dipendente in un paziente ricorrente della tua clinica."
+    }
+  },
+  "benefits": {
+    "title": "Perché entrare nel network HeyLucy",
+    "benefit1": "Nuovi pazienti in modo ricorrente e organizzato",
+    "benefit2": "Riduzione dei no-show grazie a reminder e gestione centralizzata",
+    "benefit3": "Flussi programmati che facilitano l'organizzazione dell'agenda"
+  },
+  "clinicCTA": {
+    "title": "Vuoi diventare una struttura sanitaria partner?",
+    "subtitle": "Entra nel network HeyLucy e ricevi gruppi di pazienti dalle aziende con cui collaboriamo.",
+    "cta": "Entra nel network HeyLucy"
+  },
+  "chiSiamo": {
+    "title": "Chi siamo",
+    "paragraph1": "Siamo una realtà nata nel 2025 dallo startup studio Mamazen insieme a Francesco Chiarpenello e Andrea Zanovello.",
+    "paragraph2": "Unendo competenze nel mondo healthcare e nel prodotto digitale, lavoriamo per trasformare il modo in cui dipendenti e aziende vivono i propri benefit sanitari. Vogliamo rendere immediato ciò che oggi è complesso, ottimizzare la spesa e facilitare l'accesso alle cure.",
+    "paragraph3": "Crediamo in un accesso alla salute più semplice e sostenibile, dove i benefit non restano inutilizzati ma diventano un aiuto concreto per le persone. E ogni giorno ci impegniamo perché questa visione diventi realtà.",
+    "imageAlt": "Il team di HeyLucy"
+  },
+  "sportello": {
+    "title": "Sportello Sanitario",
+    "subtitle": "Hai bisogno di supporto? Siamo qui per aiutarti a sfruttare meglio il tuo piano sanitario.",
+    "hours": "Orari: Lunedì - Venerdì, 08:30 - 19:00",
+    "contactTitle": "Per cosa puoi contattarci",
+    "service1": {
+      "title": "Visite e Diagnostica",
+      "description": "Verifichiamo se una visita o un esame è coperto prima che tu prenoti."
+    },
+    "service2": {
+      "title": "Prevenzione e Check-up",
+      "description": "Info sul calendario screening e sui pacchetti aggiuntivi."
+    },
+    "service3": {
+      "title": "Rimborsi",
+      "description": "Hai già sostenuto una spesa? Ti aiutiamo ad avviare la pratica."
+    },
+    "service4": {
+      "title": "Piano Famiglia",
+      "description": "Tutte le info per estendere le coperture ai tuoi familiari."
+    },
+    "service5": {
+      "title": "Dubbi sulle Coperture",
+      "description": "Regole complesse o poco chiare? Ti aiutiamo a capire nel dettaglio cosa include il tuo Fondo."
+    },
+    "chooseContact": "Scegli come contattarci",
+    "enableCheckboxes": "Seleziona le caselle qui sotto per abilitare la scelta",
+    "privacyCheckbox": "Ho letto e compreso la",
+    "privacyPolicy": "Privacy Policy",
+    "and": "e accetto integralmente le",
+    "serviceConditions": "Condizioni del Servizio",
+    "healthDataCheckbox": "Acconsento al trattamento dei dati personali riguardanti il mio stato di salute al fine di ricevere supporto nell'utilizzo del mio fondo sanitario integrativo.",
+    "whatsappAlt": "Contattaci su WhatsApp",
+    "whatsappText": "Oppure scrivi a +39 371 562 0380",
+    "emailAlt": "Contattaci via Email",
+    "emailText": "Oppure scrivi a sportellosanitario@heylucy.it"
+  },
+  "home": {
+    "clients": {
+      "title": "Alcuni dei nostri clienti"
+    },
+    "platform": {
+      "title": "La piattaforma",
+      "card1": {
+        "title": "Ricerca intelligente coperture",
+        "description": "Un motore di ricerca evoluto basato sull'AI e addestrato sulle coperture (fondi sanitari CCNL, welfare, etc). Fornisce risposte chiare e istantanee a domande specifiche, evitando la lettura di lunghi contratti.",
+        "imageAlt": "Interfaccia della ricerca intelligente sulle coperture sanitarie"
+      },
+      "card2": {
+        "title": "Concierge Sanitario umano",
+        "description": "Un canale di supporto umano e diretto. I nostri esperti guidano passo dopo passo i dipendenti nella risoluzione di dubbi complessi, nella prenotazione di visite e nella corretta richiesta di rimborsi.",
+        "imageAlt": "Esempio di conversazione con il Concierge Sanitario HeyLucy"
+      },
+      "card3": {
+        "title": "Monitoraggio della prevenzione",
+        "description": "Una mappa digitale personalizzata per tenere traccia dei check-up annuali gratuiti inclusi nel tuo fondo sanitario CCNL. Uno strumento attivo per monitorare la propria salute e non sprecare i vantaggi del fondo.",
+        "imageAlt": "Dashboard del monitoraggio della prevenzione sanitaria"
+      },
+      "card4": {
+        "title": "Convenzioni e sconti esclusivi",
+        "description": "Accesso a tariffe agevolate dedicate per le prestazioni non interamente coperte dal fondo aziendale, con sconti significativi su visite specialistiche, esami diagnostici e nutrizionista.",
+        "imageAlt": "Convenzioni e sconti esclusivi con Humanitas, Balanced e Noritura"
+      }
+    },
+    "advantage": {
+      "title": "Il vantaggio di scegliere HeyLucy",
+      "heylucy": "HeyLucy",
+      "standard": "Polizza sanitaria standard",
+      "row1": {
+        "feature": "Costo medio annuo",
+        "heylucy": "Da ~250 € / dipendente",
+        "standard": "Oltre 700 € / dipendente"
+      },
+      "row2": {
+        "feature": "Adesione alla prevenzione",
+        "heylucy": "Oltre l'80% dei dipendenti",
+        "standard": "Meno del 20% dei dipendenti"
+      },
+      "row3": {
+        "feature": "Fondo sanitario CCNL",
+        "heylucy": "Incluso nella piattaforma HeyLucy",
+        "standard": "Dimenticato"
+      },
+      "row4": {
+        "feature": "Assistenza sulle coperture",
+        "heylucy": "Consulente umano e dedicato",
+        "standard": "Call center generico"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": {
+        "question": "Sostituite il nostro fondo sanitario di categoria (es. Fondo EST, Metasalute, Unisalute)?",
+        "answer": "No, lo valorizziamo. Non sostituiamo il fondo CCNL che la tua azienda già paga per legge. Al contrario, diamo ai dipendenti una piattaforma intuitiva che li guida passo-passo a sfruttare al 100% le garanzie che hanno già, trasformando un costo obbligatorio in un benefit realmente percepito e utilizzato."
+      },
+      "q2": {
+        "question": "Come funzionano le coperture extra insieme al fondo esistente?",
+        "answer": "In perfetta sinergia e senza sovrapposizioni. Identifichiamo le prestazioni escluse o scoperte dal tuo fondo di categoria e integriamo solo le polizze complementari necessarie. Per il dipendente l'esperienza è totalmente fluida: accede a un'unica piattaforma e parla con un solo Concierge, come se avesse una sola grande copertura."
+      },
+      "q3": {
+        "question": "Come fate a costare meno rispetto a una polizza sanitaria tradizionale?",
+        "answer": "Eliminando gli sprechi. Le polizze tradizionali (che superano spesso i 700€/anno a dipendente) ti fanno ri-pagare prestazioni che il tuo fondo CCNL coprirebbe già. HeyLucy guida prima il dipendente a usare la copertura esistente e aggiunge la tutela complementare solo dove serve davvero, garantendo una protezione completa a partire da soli ~250€/anno."
+      },
+      "q4": {
+        "question": "Come funziona il Consulente Sanitario umano e quando entra in gioco?",
+        "answer": "È un team di supporto dedicato ai casi più complessi e farraginosi. Interviene quando la burocrazia rischia di bloccare il dipendente: ad esempio se una struttura chiede un pagamento per una prestazione che dovrebbe essere coperta, o quando il linguaggio assicurativo è incomprensibile. Il consulente prende in carico il problema e guida la persona passo-passo fino alla risoluzione."
+      },
+      "q5": {
+        "question": "Come funziona l'Area Prevenzione all'interno della piattaforma?",
+        "answer": "È la sezione dove è mappata tutta la prevenzione coperta dal fondo. L'app segnala i check-up gratuiti e gli esami previsti per il dipendente, collegandosi direttamente alla procedura di prenotazione. La piattaforma ti avvisa quando è momento di fare prevenzione e ti guida passo-passo su come usufruirne senza commettere errori."
+      }
+    },
+    "finalCta": {
+      "title": "Pronto a dare valore reale al welfare sanitario?",
+      "subtitle": "In 30 minuti ti mostriamo come i tuoi dipendenti useranno finalmente le coperture che la tua azienda già paga.",
+      "cta": "PARLA CON NOI"
+    },
+    "reviews": {
+      "title": "Cosa dicono di HeyLucy su Trustpilot",
+      "scoreLabel": "Molto buono",
+      "cta": "Leggi tutte le recensioni su"
+    },
+    "coverageExtra": {
+      "title": "Coperture extra",
+      "subtitle": "Aggiungiamo le coperture del tuo fondo sanitario integrativo, solo quelle che mancano senza raddoppiare prestazioni e costi.",
+      "yourFund": "Il tuo fondo",
+      "withHeylucy": "Con HeyLucy",
+      "legendBase": "Base di partenza",
+      "legendExtra": "Integrazioni ad hoc",
+      "hint": "Tocca per togliere o rimettere le integrazioni",
+      "note": "Solo quello che manca: chirurgia, carie, figli o altro!!",
+      "badge": "Copertura completa ad ⅓ del prezzo",
+      "hub": "Un punto unico di contatto per sfruttare al meglio",
+      "branch1": {
+        "title": "Il fondo sanitario CCNL che hai già",
+        "detail": "(Fondo Est, Metasalute, ecc)"
+      },
+      "branch2": {
+        "title": "Le coperture integrative su misura",
+        "detail": "di HeyLucy"
+      }
+    },
+    "press": {
+      "title": "Parlano di noi:"
+    },
+    "statement": {
+      "title": "Il fondo che paghi già, finalmente usato.",
+      "text": "Ogni azienda versa un fondo sanitario per legge, e quasi nessun dipendente sa cosa contiene. Noi lo rendiamo leggibile in una schermata, e aggiungiamo solo le coperture che mancano."
+    },
+    "showcase": {
+      "label": "Cosa cambia per il tuo team"
+    }
+  },
+  "navigatore": {
+    "hero": {
+      "title": "Semplifichiamo l'accesso alla salute per i tuoi dipendenti.",
+      "subtitle": "Abbatti ogni barriera burocratica tra il tuo team e le loro coperture sanitarie. Con HeyLucy, l'utilizzo dei benefit aziendali diventa un'esperienza immediata e senza attriti. Perché un team in salute è il motore di un'azienda sana.",
+      "cta": "SCOPRI LA PIATTAFORMA",
+      "imageAlt": "Team di professionisti che collabora per la prevenzione aziendale"
+    },
+    "value": {
+      "title": "Un benefit che viene usato davvero, non solo sulla carta.",
+      "subtitle": "Spesso i piani sanitari e i fondi integrativi rimangono inutilizzati a causa della complessità burocratica. Con il Navigatore Sanitario di HeyLucy:",
+      "item1": "Aumenti il valore percepito del welfare aziendale da parte del team.",
+      "item2": "Riduci il tempo perso dai dipendenti nella gestione di pratiche e rimborsi.",
+      "item3": "Promuovi una cultura della prevenzione reale e tracciabile all'interno della tua azienda."
+    },
+    "cta": {
+      "title": "Trasforma la gestione della salute nella tua azienda.",
+      "subtitle": "Ottimizziamo i tuoi benefit esistenti e diamo ai tuoi dipendenti lo strumento definitivo per utilizzarli senza stress.",
+      "cta": "PRENOTA UNA DEMO"
+    },
+    "platform": {
+      "title": "Come funziona la piattaforma",
+      "subtitle": "Quattro strumenti. Qui sotto trovi cosa fa ciascuno, spiegato senza giri di parole.",
+      "card1": {
+        "title": "Ricerca intelligente coperture",
+        "lead": "Scrivi la domanda come la diresti a un collega e ricevi la risposta in pochi secondi.",
+        "body": "Il regolamento del tuo fondo sanitario è lungo decine di pagine e nessuno lo legge. Con la piattaforma scrivi una domanda normale, per esempio «quanto mi rimborsano per la pulizia dei denti». Il sistema cerca dentro i documenti ufficiali del tuo fondo e risponde in italiano semplice.",
+        "point1": "Fai la domanda con parole tue, non servono termini tecnici",
+        "point2": "La risposta arriva in pochi secondi, non in due giorni",
+        "point3": "Ogni risposta indica il documento ufficiale da cui è presa, così puoi verificare"
+      },
+      "card2": {
+        "title": "Concierge Sanitario umano",
+        "lead": "Quando la burocrazia si blocca, ti risponde una persona vera.",
+        "body": "Alle domande semplici risponde la piattaforma. Per i casi complicati c'è una persona in carne e ossa. Serve quando la clinica ti chiede di pagare una prestazione che il fondo dovrebbe coprire, oppure quando il modulo da compilare non si capisce. Tu scrivi, un nostro operatore prende in mano il problema e ti segue fino a quando è risolto.",
+        "point1": "Scrivi su WhatsApp, senza installare nulla",
+        "point2": "Risponde una persona, non un messaggio automatico",
+        "point3": "Ti segue fino alla soluzione invece di passarti a un altro ufficio"
+      },
+      "card3": {
+        "title": "Monitoraggio della prevenzione",
+        "lead": "Vedi in una schermata quali controlli gratuiti ti restano quest'anno.",
+        "body": "Il tuo fondo paga già alcuni esami di prevenzione ogni anno. Se non li prenoti entro dicembre li perdi, e la maggior parte delle persone li perde perché non sa di averli. La piattaforma ti mostra l'elenco dei controlli che ti spettano, segna quali hai già fatto e ti avvisa quando è il momento di prenotare il prossimo.",
+        "point1": "L'elenco dei controlli inclusi nel tuo fondo è già pronto, non devi cercarlo",
+        "point2": "Vedi a colpo d'occhio cosa hai fatto e cosa manca",
+        "point3": "Ricevi un avviso prima che l'anno scada"
+      },
+      "card4": {
+        "title": "Convenzioni e sconti esclusivi",
+        "lead": "Se il fondo non copre tutto, paghi comunque meno.",
+        "body": "Alcune prestazioni il fondo le copre solo in parte, altre per niente. Per quelle abbiamo accordi diretti con cliniche e specialisti a prezzo ridotto. Prenoti dalla piattaforma e lo sconto è già applicato sul prezzo che vedi.",
+        "point1": "Prezzi ridotti su visite specialistiche ed esami diagnostici",
+        "point2": "Lo sconto è già applicato, non devi chiederlo a nessuno",
+        "point3": "Vale anche per nutrizionista e servizi che il fondo non copre"
+      }
+    }
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "subtitle": "La pagina che cercavi non esiste o è stata spostata.",
+    "cta": "Torna alla home"
+  }
+}
