@@ -1043,6 +1043,36 @@ Risolto in `src/lib/utils.ts` dichiarando i sette corpi fluidi a `tailwind-merge
 
 ---
 
+## 15 bis. Cambio lingua: la pagina si sfoca e si rimette a fuoco
+
+Da desktop, cambiando lingua la pagina **si sfoca a onde, sostituisce il testo mentre e' illeggibile e si rimette a fuoco**. Non e' un salto secco.
+
+La regia dei tempi sta in `LanguageContext`, che mette `data-lingua-fase` sulla radice: `uscita` per 420ms, poi lo scambio del testo, poi `entrata` per 620ms. Il movimento sta tutto in `index.css`, agganciato a quell'attributo.
+
+⚠️ **Niente variazioni di luminosita' su area grande: rischio fotosensibilita'.**
+
+La prima versione faceva svanire le sezioni in **opacita'** e ci passava sopra una **banda crema a tutto schermo**: la pagina schiariva e tornava scura in meno di un secondo, su quasi tutto il viewport. E' il tipo di lampeggio che puo' innescare crisi in chi e' fotosensibile, e va evitato **a prescindere dalla frequenza**: la soglia delle tre volte al secondo e' un limite, non un permesso.
+
+Ora si muovono **solo sfocatura e posizione**, che non cambiano la luminanza media dell'inquadratura. A 7px di sfocatura il testo e' gia' illeggibile, quindi lo scambio resta invisibile lo stesso: l'opacita' non serviva a niente.
+
+**Misurato sui fotogrammi**, dodici scatti a 90ms l'uno per tutta la durata dell'effetto: luminanza media dell'inquadratura fra **0,2617 e 0,2648**, cioe' un'escursione dell'**1,2%**. La soglia di riferimento per il lampeggio parla di variazioni dal 10% in su su area grande: siamo a un ventesimo, e in una sola discesa, non in un impulso.
+
+⚠️ Se un domani si rimette l'opacita' o una scia, **va rifatta questa misura**.
+
+**Il resto**
+- L'onda arriva da un `animation-delay` crescente per `nth-child`, 55ms a sezione: il cambio scende lungo la pagina. Serve anche a non avere mai l'intero schermo che cambia nello stesso istante
+- ⚠️ Si anima la **sezione**, non ogni parola: sui discendenti, genitore e figlio applicherebbero entrambi la sfocatura e si sommerebbe
+- Il testo cambia mentre e' sfocato. Verificato: a 200ms la sfocatura e' 4,8px e il titolo e' ancora in italiano; 200ms dopo e' inglese, ancora a 3,7px
+
+⚠️ **Tre casi in cui l'effetto non parte affatto**, e il cambio e' istantaneo:
+- stessa lingua
+- `prefers-reduced-motion`. Verificato: nessuna fase, testo gia' cambiato
+- **sotto i 1024px**: su un telefono costa caro in resa e si vede poco, e li' lo switch sta comunque dentro il menu a tutto schermo. Verificato: nessuna fase
+
+I timer vengono azzerati a ogni nuovo cambio e alla smontata del provider: cliccando due volte di fila non restano fasi appese.
+
+---
+
 ## 16. Motion system
 
 Il movimento è una parte del design system, non un effetto per sezione. Tre soli meccanismi.

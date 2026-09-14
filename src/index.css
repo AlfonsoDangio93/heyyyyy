@@ -91,3 +91,91 @@ All colors MUST be HSL.
     }
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Cambio lingua: la pagina si sfoca e si rimette a fuoco
+
+   La regia dei tempi sta in `LanguageContext`, che mette `data-lingua-fase`
+   sulla radice: `uscita` per 420ms, poi il testo viene sostituito e parte
+   `entrata` per 620ms. Qui c'e' solo il movimento.
+
+   ⚠️ **Niente variazioni di luminosita' su area grande.** La prima versione
+   faceva svanire le sezioni in opacita' e ci passava sopra una banda crema a
+   tutto schermo: la pagina schiariva e tornava scura in meno di un secondo, su
+   quasi tutto il viewport. E' il tipo di lampeggio che puo' innescare crisi in
+   chi e' fotosensibile, e va evitato a prescindere dalla frequenza.
+
+   Qui si muovono **solo sfocatura e posizione**, che non cambiano la luminanza
+   media dell'inquadratura. A 7px di sfocatura il testo e' gia' illeggibile,
+   quindi lo scambio resta invisibile lo stesso: l'opacita' non serviva.
+
+   ⚠️ Tutto dentro `prefers-reduced-motion: no-preference`, e il contesto salta
+   comunque l'effetto: questa e' la seconda rete.
+
+   ⚠️ Si anima la **sezione**, non ogni parola. Mettendo l'animazione su tutti i
+   discendenti, genitore e figlio la applicano entrambi e la sfocatura si
+   somma.
+--------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes lingua-sfoca {
+    from {
+      filter: blur(0);
+      transform: translateY(0) scale(1);
+    }
+    to {
+      filter: blur(7px);
+      transform: translateY(-10px) scale(1.008);
+    }
+  }
+
+  @keyframes lingua-mette-a-fuoco {
+    from {
+      filter: blur(8px);
+      transform: translateY(12px) scale(0.994);
+    }
+    to {
+      filter: blur(0);
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  html[data-lingua-fase="uscita"] main > section,
+  html[data-lingua-fase="uscita"] header > div,
+  html[data-lingua-fase="uscita"] footer > div {
+    animation: lingua-sfoca 420ms cubic-bezier(0.4, 0, 1, 1) forwards;
+  }
+
+  html[data-lingua-fase="entrata"] main > section,
+  html[data-lingua-fase="entrata"] header > div,
+  html[data-lingua-fase="entrata"] footer > div {
+    animation: lingua-mette-a-fuoco 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  /* L'onda: ogni sezione parte un filo dopo quella sopra, cosi' il cambio
+     scende lungo la pagina invece di scattare tutto insieme. Serve anche a
+     non avere mai l'intero schermo che cambia nello stesso istante. */
+  html[data-lingua-fase] main > section:nth-child(1) {
+    animation-delay: 0ms;
+  }
+  html[data-lingua-fase] main > section:nth-child(2) {
+    animation-delay: 55ms;
+  }
+  html[data-lingua-fase] main > section:nth-child(3) {
+    animation-delay: 110ms;
+  }
+  html[data-lingua-fase] main > section:nth-child(4) {
+    animation-delay: 165ms;
+  }
+  html[data-lingua-fase] main > section:nth-child(5) {
+    animation-delay: 220ms;
+  }
+  html[data-lingua-fase] main > section:nth-child(6) {
+    animation-delay: 275ms;
+  }
+  html[data-lingua-fase] main > section:nth-child(n + 7) {
+    animation-delay: 330ms;
+  }
+  html[data-lingua-fase] footer > div {
+    animation-delay: 360ms;
+  }
+}

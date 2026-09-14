@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef, ReactNode } from 'react';
 import it from './translations/it.json';
 import en from './translations/en.json';
 
@@ -44,9 +44,61 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     document.documentElement.lang = language;
   }, [language]);
 
+  const timer = useRef<number[]>([]);
+
+  /**
+   * Il cambio lingua non e' un salto secco: la pagina si dissolve a onde, il
+   * testo viene sostituito **mentre e' sfocata** e poi si rimaterializza.
+   *
+   * Qui c'e' solo la regia dei tempi; l'animazione sta in `index.css`, agganciata
+   * a `data-lingua-fase` sull'elemento radice.
+   *
+   * ⚠️ Tre casi in cui si salta l'effetto e si cambia e basta:
+   *  - stessa lingua, non c'e' niente da cambiare
+   *  - `prefers-reduced-motion`: una pagina intera che si sfoca e trema e'
+   *    esattamente cio' che quella preferenza chiede di evitare
+   *  - sotto i 1024px: su un telefono l'effetto costa caro in resa e si vede
+   *    poco, e comunque li' lo switch sta dentro il menu a tutto schermo
+   */
   const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
+    if (lang === language) return;
+
+    const salta =
+      typeof window === 'undefined' ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      window.matchMedia('(max-width: 1023px)').matches;
+
+    if (salta) {
+      setLanguageState(lang);
+      return;
+    }
+
+    timer.current.forEach((id) => window.clearTimeout(id));
+    timer.current = [];
+
+    const radice = document.documentElement;
+    radice.dataset.linguaFase = 'uscita';
+
+    timer.current.push(
+      window.setTimeout(() => {
+        setLanguageState(lang);
+        radice.dataset.linguaFase = 'entrata';
+        timer.current.push(
+          window.setTimeout(() => {
+            delete radice.dataset.linguaFase;
+          }, 620),
+        );
+      }, 420),
+    );
   };
+
+  useEffect(
+    () => () => {
+      timer.current.forEach((id) => window.clearTimeout(id));
+      delete document.documentElement.dataset.linguaFase;
+    },
+    [],
+  );
 
   const t = (key: string): string => {
     return getNestedValue(translations[language], key);
