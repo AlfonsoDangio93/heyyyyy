@@ -36,7 +36,10 @@ const FAQSection = () => {
               </SectionHeading>
             </Reveal>
 
-            <Accordion type="single" collapsible className="w-full">
+            {/* La prima domanda parte aperta: la sezione altrimenti si apre
+                su cinque righe chiuse e non si capisce cosa ci sia dentro.
+                Resta `collapsible`, quindi chi vuole puo' richiuderla. */}
+            <Accordion type="single" collapsible defaultValue={FAQ_KEYS[0]} className="w-full">
               {FAQ_KEYS.map((key, index) => (
                 <Reveal key={key} delay={index * 100} threshold={0.1}>
                   {/* ⚠️ Il filo di separazione si toglie all'ultima riga

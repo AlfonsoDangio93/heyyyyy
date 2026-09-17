@@ -375,7 +375,6 @@
     },
     "reviews": {
       "title": "What people say about HeyLucy on Trustpilot",
-      "scoreLabel": "Great",
       "cta": "Read all the reviews on"
     },
     "coverageExtra": {
@@ -387,7 +386,7 @@
       "legendExtra": "Tailored add-ons",
       "hint": "Tap to remove or put back the add-ons",
       "note": "Only what is missing: surgery, dental, family or anything else!!",
-      "badge": "Full coverage at ⅓ of the price",
+      "badge": "Full coverage at ⅓ of the market price",
       "hub": "One single point of contact to get the most out of",
       "branch1": {
         "title": "The CCNL health fund you already have",

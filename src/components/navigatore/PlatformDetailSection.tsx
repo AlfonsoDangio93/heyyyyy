@@ -1,9 +1,9 @@
 import { Check } from "lucide-react";
 import SectionHeading from "@/components/home/SectionHeading";
 import Reveal from "@/components/Reveal";
-import searchImage from "@/assets/platform-search.png";
-import conciergeImage from "@/assets/platform-concierge.png";
-import preventionImage from "@/assets/platform-prevention.png";
+import searchImage from "@/assets/platform-search.webp";
+import conciergeImage from "@/assets/platform-concierge.webp";
+import preventionImage from "@/assets/platform-prevention.webp";
 import discountsImage from "@/assets/platform-discounts.png";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "@/i18n/useTranslation";

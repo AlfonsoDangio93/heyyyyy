@@ -375,7 +375,6 @@
     },
     "reviews": {
       "title": "Cosa dicono di HeyLucy su Trustpilot",
-      "scoreLabel": "Molto buono",
       "cta": "Leggi tutte le recensioni su"
     },
     "coverageExtra": {
@@ -387,7 +386,7 @@
       "legendExtra": "Integrazioni ad hoc",
       "hint": "Tocca per togliere o rimettere le integrazioni",
       "note": "Solo quello che manca: chirurgia, carie, figli o altro!!",
-      "badge": "Copertura completa ad ⅓ del prezzo",
+      "badge": "Copertura completa ad ⅓ del prezzo di mercato",
       "hub": "Un punto unico di contatto per sfruttare al meglio",
       "branch1": {
         "title": "Il fondo sanitario CCNL che hai già",

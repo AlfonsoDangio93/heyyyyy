@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import CtaButton from "@/components/CtaButton";
 import PressPanel from "@/components/home/PressPanel";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-aziende.jpg";
+import heroImage from "@/assets/hero-home.webp";
 import { useTranslation } from "@/i18n/useTranslation";
 
 /**
@@ -35,15 +35,20 @@ const HeroSection = () => {
           aria-hidden="true"
           className="h-full w-full object-cover object-center"
         />
-        {/* Il riferimento ha una foto di luminanza media appena smorzata, con
-            il bianco sopra a 5.4:1. La nostra foto e' un muro chiaro (media
-            166), quindi per arrivare allo stesso risultato percepito il velo
-            deve essere piu' denso: misurato sul render, questo gradiente da'
-            5.2:1 mediano e 4.6:1 come minimo sulle righe di testo. Un velo
-            leggero come quello del riferimento qui darebbe 2.4:1. */}
+        {/* ⚠️ Il velo e' denso perche' la fotografia e' un muro azzurro molto
+            chiaro, con chiazze quasi bianche: sui pixel a 255 servono almeno
+            82 punti di velo per tenere il bianco a 4,5:1, misurato.
+            Sotto `md` il testo occupa tutta la larghezza: li' il velo scende
+            dall'alto, resta pieno fino al 70% (dove finiscono testo e bottoni)
+            e si apre in fondo, cosi' la fotografia si vede almeno sotto.
+            Da `md` il testo sta nella meta' sinistra, quindi il velo si apre
+            verso destra e lascia vedere il soggetto.
+            ⚠️ Le opacita' vanno di cinque in cinque: `/86` e `/78` non sono
+            nella scala di Tailwind e non generano nessuna regola, quindi il
+            velo resta a meta' senza che nulla segnali l'errore. */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 via-55% to-primary/45"
+          className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/85 via-70% to-primary/55 md:bg-gradient-to-r md:from-primary/90 md:via-primary/85 md:via-55% md:to-primary/50"
         />
       </div>
 

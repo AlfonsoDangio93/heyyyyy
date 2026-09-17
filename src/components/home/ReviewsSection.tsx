@@ -74,16 +74,11 @@ const ReviewsSection = () => {
           </SectionHeading>
         </Reveal>
 
-        <Reveal delay={100}>
-          <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
-            <Stars rating={5} size="h-5 w-5" />
-            <span className="text-fluid-base font-bold text-primary">{TRUSTPILOT.score}</span>
-            <span className="text-fluid-sm text-muted-foreground">
-              {t("home.reviews.scoreLabel")}
-            </span>
-          </div>
-        </Reveal>
-
+        {/* ⚠️ Sotto al titolo non va **niente**: punteggio, giudizio e infine
+            anche le stelle di riepilogo sono stati tolti su richiesta, uno alla
+            volta. Le stelle restano solo dentro le schede, dove sono il voto
+            di quella recensione. `TRUSTPILOT.score`, `count` e `fiveStarShare`
+            restano in `constants.ts` ma non compaiono piu' a schermo. */}
       </div>
 
       {/* Nastro a tutta finestra: sta fuori dal contenitore apposta, cosi' le

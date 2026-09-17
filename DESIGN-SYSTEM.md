@@ -603,7 +603,7 @@ Su richiesta esplicita, `CoverageExtraSection` replica lo slide:
 - Barre alte 96px, raggio `rounded-lg`, contigue senza stacco
 - Segmento «integrazioni» sul nuovo token `--graphite` (`202 15% 44%`, ardesia): il petrolio di brand che avevo usato prima non corrispondeva allo slide
 - Legenda con pastiglie quadrate da 48px
-- Annotazione in `font-hand` (Caveat) con la freccia curva alla sua sinistra
+- Annotazione in `font-hand` (Caveat) con la freccia curva (dal 17 settembre 2026 **sotto** la scritta, non piu' alla sua sinistra: vedi sotto)
 - Badge a stella da 176/208px, testo vincolato a `inset-[19%]`, cioè al cerchio interno della stella: un padding uniforme spingerebbe il testo verso le punte, dove lo spazio si assottiglia
 
 **Chi siamo**
@@ -755,6 +755,12 @@ Struttura presa da `pezzo 3.png`: li' ogni sezione e' un **rettangolo stondato**
 **Niente etichetta al passaggio del mouse.** Ci sono state tre versioni, tutte tolte su indicazione del cliente: un cursore a faccina emoji, poi un'etichetta che seguiva il puntatore, infine un fumetto agganciato al fianco del bottone con le battute «Ma daiii...» e «Meglio così». ⚠️ **Non riproporle.** Resta solo lo schiarimento del segmento crema al passaggio sulla pastiglia, che e' un ritorno di stato e non una battuta.
 
 **La stella scavalca il bordo** come il pannello testate scavalca l'hero: meta' sul bianco della pagina e meta' sul petrolio. Sotto, la nota a mano con la freccia.
+
+**La freccia della nota sta sotto la scritta e punta in basso** (17 settembre 2026, su richiesta del cliente). Prima stava a sinistra del testo e puntava in diagonale verso il basso a sinistra; ora `HandNote` e' una colonna (testo, poi freccia) e il disegno e' un arco verticale (`viewBox="0 0 56 100"`, punta a x=24) che scende verso la **fetta crema delle integrazioni** della barra «Con HeyLucy».
+- Misurato a 1440: punta della freccia a 1027px, fetta crema da 892 a 1208 con centro a 1050. Verificato anche a 768, 1024 e 1536: la punta cade sempre dentro la fetta crema
+- ⚠️ Il rientro e' `lg:mr-12` e **non** `md:mr-12`: a 768 il rientro grande portava la punta 6px a sinistra della fetta, cioe' sopra la parte azzurra della base
+- La freccia resta `hidden md:block`: sotto `md` la nota sta **sotto** il grafico, quindi una freccia rivolta in basso punterebbe al blocco del marchio invece che alle barre
+- Spazio verificato: la colonna della nota finisce 14px sopra la prima riga del grafico a 768, 25px a 1024, 27px da 1280 in su
 
 - 208px di lato da `md` in su (128 sotto), con lo scavalco a meta': ⚠️ cambiando la misura del sole va rifatto anche il margine negativo, che vale meta' altezza
 - Crema con **filo di petrolio da 1,4**: sulla meta' bianca il crema da solo fa 1,05:1 e sparirebbe
@@ -1219,3 +1225,53 @@ npx tsc -p tsconfig.node.json --noEmit   # la config di Vite
 
 Rileggere § 12. In sintesi: non toccare `componentTagger()`, la porta 8080 in `vite.config.ts`, `components.json`, `src/components/ui/**` e gli script GTM, Clarity e meta Facebook in `index.html`. Verificare che `npm run build` passi, poi Share → Publish.
 
+## 18. Fotografie nuove del cliente — 17 settembre 2026
+
+Il cliente ha aggiunto la cartella **`public/Assets sito/`** e ci mette le immagini buone. E' la cartella sorgente, non quella servita: da li' ricavo una copia **WebP ridimensionata** in `src/assets/` e sono quelle che il sito importa. Cosi' la pagina resta leggera e l'originale resta intatto. ⚠️ Quando il cliente sostituisce un file in quella cartella **la copia in `src/assets/` va rifatta**, altrimenti il sito continua a mostrare la vecchia.
+
+| Sorgente in `public/Assets sito/` | Copia usata dal sito | Peso | Dove |
+|---|---|---|---|
+| `Chatbot pic.png` (1496×680, 100 KB) | `platform-search.webp` 1496×680, senza perdita | 25 KB | Home «La piattaforma» 01, «Come funziona» 01 |
+| `Consulente sanitario WA.png` (1908×1404, 878 KB) | `platform-concierge.webp` 1200×883, q93 | 136 KB | Home «La piattaforma» 02, «Come funziona» 02 |
+| `Sezione prevenzione.png` (2298×1256, 338 KB) | `platform-prevention.webp` 1400×765, q95 | 57 KB | Home «La piattaforma» 03, «Come funziona» 03 |
+| `Hero.jpg` (4025×6075, 2,6 MB) | `hero-home.webp` 1500×1902, q78, ritagliata all'8–92% dell'altezza | 206 KB | Hero della home |
+| `Hero come funziona.jpg` (2550×1664, 1,3 MB) | `hero-come-funziona.webp` 1800×1175, q80 | 79 KB | Hero di `/navigatore-sanitario` |
+| `Altre immagini stock (2).jpg` (4067×2997, 949 KB) | `valore-welfare.webp` 1400×1032, q80 | 82 KB | «Come funziona», scheda valore 01 |
+| `Altre immagini stock (1).jpg` (5760×3840, 659 KB) | `tempo-liberato.webp` 1400×933, q80 | 35 KB | «Come funziona», scheda valore 02 |
+
+Le tre schermate di prodotto sono state cambiate **anche sulla pagina «Come funziona»**, che monta le stesse tre voci: lasciarle diverse avrebbe mostrato due prodotti.
+
+### Hero della home: il velo e' piu' denso di prima
+
+La fotografia e' un muro azzurro molto chiaro con chiazze quasi bianche. Misurato: sui pixel a 255 servono **almeno 82 punti di velo** per tenere il bianco a 4,5:1. Il velo vecchio (`/80 → /70 → /45`, tarato sulla foto precedente) qui dava 2,9:1 sul mobile.
+
+- Da `md`: `bg-gradient-to-r from-primary/90 via-primary/85 via-55% to-primary/50`. Misurato sulle righe di testo: **5,8:1 mediano, 5,1:1 minimo**
+- Sotto `md` il testo occupa tutta la larghezza, quindi il velo **scende dall'alto**: `bg-gradient-to-b from-primary/90 via-primary/85 via-70% to-primary/55`. Pieno dove stanno testo e bottoni, aperto in fondo, cosi' la fotografia si vede almeno sotto. Misurato: **5,6:1 mediano, 5,3:1 minimo**
+- ⚠️ Con un velo cosi' denso il soggetto sul mobile si intravede appena. E' il prezzo del testo bianco a tutta larghezza su un muro chiaro: per rivederlo servirebbe una scatola di testo come su «Come funziona»
+- ⚠️ **Le opacita' vanno di cinque in cinque.** `via-primary/86` e `to-primary/78` non sono nella scala di Tailwind: non generano nessuna regola e il velo resta a meta' **senza nessun errore**. Era successo: il gradiente andava da `/90` a trasparente e il contrasto sul mobile era crollato a 1,5:1
+
+### Hero di «Come funziona»: soggetto a sinistra, scatola a destra
+
+La fotografia nuova ha l'uomo fra il 22% e il 42% della larghezza, quindi la scatola del testo e' passata **a destra** (`md:ml-auto`). Il ritaglio:
+
+- `object-top` da `md`: la fascia visibile e' l'80% centrale e un ritaglio centrato mangerebbe la testa
+- `object-[22%_top]` sotto `md`: li' si vede solo il 36% della larghezza e un ritaglio centrato mostrerebbe le sedie vuote
+- ⚠️ `pt-52` sotto `md` (era `pt-32`): la scatola prende quasi tutta la larghezza e con lo stacco vecchio finiva **sulla faccia** del soggetto, che nel ritaglio verticale sta fra 77 e 192 pixel. Con 208 di stacco la faccia resta sopra la scatola
+- Il velo resta `bg-primary/35`: il testo ha la sua scatola e non gli serve altro
+
+### Altri due ritocchi dello stesso giro
+
+- **Recensioni**: sotto al titolo non c'e' piu' niente. Le stelle di riepilogo erano l'ultimo pezzo rimasto dopo punteggio e giudizio, tolte anche quelle. Le stelle restano **dentro le schede**, dove sono il voto di quella recensione
+- **FAQ**: la prima domanda parte aperta (`defaultValue={FAQ_KEYS[0]}`). Resta `collapsible`, quindi si puo' richiudere. Vale anche su «Chi siamo», che monta lo stesso componente
+
+### Schede valore di «Come funziona»: un ritaglio per scheda
+
+Le due schede basse hanno una striscia molto larga (596×144 da desktop, cioe' 4,1:1) e un ritaglio centrato ci mostra solo la fascia centrale dell'originale. Per questo `VALUE_CARDS` porta un campo **`focus`**, applicato con `cn()` sull'immagine:
+
+- **01 valore percepito**, ritratto in studio: `object-[50%_12%]`. La faccia nell'originale sta fra l'8% e il 42% dell'altezza, un ritaglio centrato inquadrava il raccoglitore
+- **02 tempo perso**, ragazza che si stira: e' la scheda alta (596×474), il ritaglio centrato va bene
+- **03 cultura della prevenzione**: e' rimasta `problem-screening.jpg`, i due medici
+
+⚠️ La pila di moduli (`problem-fondi-sanitari.jpg`) e' uscita dalla pagina: stava sulla 02 e il cliente ci ha voluto la foto nuova. Il file resta in `src/assets/` ma non lo usa piu' nessuno.
+
+⚠️ `public/Assets sito/` sta dentro `public/`, quindi **gli originali finiscono anche nella build** (8,6 MB che nessuno scarica ma che vengono pubblicati). Se dà fastidio, la cartella va spostata fuori da `public/`, per esempio in `assets-sorgente/` alla radice: il sito non la importa, quindi non si rompe niente.

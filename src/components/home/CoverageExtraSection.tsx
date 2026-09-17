@@ -22,11 +22,17 @@ const burstPath = (spikes = 22, outer = 50, inner = 41.5) => {
   return `${d}Z`;
 };
 
-/** Freccia curva disegnata a mano: prende il colore dal genitore. */
+/**
+ * Freccia curva disegnata a mano: prende il colore dal genitore.
+ *
+ * Punta in basso, non piu' a sinistra: la nota sta sopra e la fetta crema
+ * delle integrazioni le cade sotto, quasi sulla stessa colonna (misurato a
+ * 1440: centro della nota a 1203px, centro della fetta a 1182px).
+ */
 const CurvedArrow = ({ className = "" }: { className?: string }) => (
-  <svg viewBox="0 0 100 56" fill="none" aria-hidden="true" className={className}>
-    <path d="M92 6C70 14 34 22 13 44" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-    <path d="M13 44 31 42M13 44 20 27" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+  <svg viewBox="0 0 56 100" fill="none" aria-hidden="true" className={className}>
+    <path d="M38 6C46 34 26 48 24 88" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+    <path d="M24 88 13 68M24 88 37 73" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
   </svg>
 );
 
@@ -37,16 +43,22 @@ const CurvedArrow = ({ className = "" }: { className?: string }) => (
  */
 
 /**
- * Nota scritta a mano con la freccia che punta alle barre. Compare una volta
+ * Nota scritta a mano con la freccia sotto, che scende verso la fetta crema
+ * delle integrazioni. Compare una volta
  * sola sullo schermo: sotto il sole da `md` in su, in fondo al grafico sotto,
  * dove nell'angolo in alto a destra finirebbe sopra al titolo.
  */
 const HandNote = ({ text }: { text: string }) => (
-  <div className="flex items-start gap-2 text-accent/70">
-    <CurvedArrow className="hidden h-12 w-16 shrink-0 md:block" />
+  <div className="flex flex-col items-center gap-2 text-accent/70">
     <p className="max-w-[17rem] text-center font-hand text-2xl font-bold uppercase leading-tight text-accent md:-rotate-6 md:text-left md:text-[1.6rem]">
       {text}
     </p>
+    {/* La freccia sta sotto la scritta e scende verso la fetta crema delle
+        integrazioni. Il rientro la porta sulla colonna della fetta invece che
+        sul bordo destro del riquadro.
+        ⚠️ A 768 il rientro grande la portava 6px fuori dalla fetta, sopra la
+        parte azzurra: da `md` il rientro e' zero, torna a 48px da `lg`. */}
+    <CurvedArrow className="hidden h-20 w-12 shrink-0 md:block lg:mr-12" />
   </div>
 );
 
