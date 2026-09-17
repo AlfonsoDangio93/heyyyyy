@@ -27,7 +27,7 @@
     "title": "Health coverage for your team, easy to use.",
     "subtitle": "Start from the CCNL fund you already pay for, add only what is missing",
     "bullet1": "Your CCNL health fund used to the full",
-    "bullet2": "A human health concierge, not a generic call centre",
+    "bullet2": "A human health advisor, not a generic call centre",
     "bullet3": "Over 80% of employees take up prevention",
     "cta": "TALK TO US",
     "ctaSecondary": "EXPLORE THE PLATFORM"
@@ -305,9 +305,9 @@
         "imageAlt": "Smart search interface for health coverage"
       },
       "card2": {
-        "title": "Human Health Concierge",
+        "title": "Human Health Advisor",
         "description": "A direct, human support channel. Our experts guide employees step by step through complex questions, appointment booking and filing reimbursement claims correctly.",
-        "imageAlt": "Example of a conversation with the HeyLucy Health Concierge"
+        "imageAlt": "Example of a conversation with the HeyLucy Health Advisor"
       },
       "card3": {
         "title": "Prevention tracking",
@@ -353,7 +353,7 @@
       },
       "q2": {
         "question": "How does extra coverage work alongside the existing fund?",
-        "answer": "In perfect synergy and without overlaps. We identify the services excluded or uncovered by your category fund and add only the complementary policies that are actually needed. For the employee the experience is completely seamless: one platform, one Concierge, as if there were a single large policy."
+        "answer": "In perfect synergy and without overlaps. We identify the services excluded or uncovered by your category fund and add only the complementary policies that are actually needed. For the employee the experience is completely seamless: one platform, one Advisor, as if there were a single large policy."
       },
       "q3": {
         "question": "How do you cost less than a traditional health policy?",
@@ -439,7 +439,7 @@
         "point3": "Every answer points to the official document it came from, so you can check it"
       },
       "card2": {
-        "title": "Human Health Concierge",
+        "title": "Human Health Advisor",
         "lead": "When the paperwork gets stuck, a real person answers you.",
         "body": "The platform handles the simple questions. For complicated cases there is a real person. You need one when a clinic asks you to pay for something the fund should cover, or when the form makes no sense. You write, one of our people takes the problem on and stays with you until it is solved.",
         "point1": "Write on WhatsApp, nothing to install",

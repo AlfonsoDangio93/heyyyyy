@@ -27,7 +27,7 @@
     "title": "Coperture sanitarie per il tuo team, facili da usare.",
     "subtitle": "Parti dal fondo CCNL che paghi già, aggiungi solo quello che manca",
     "bullet1": "Fondo sanitario CCNL sfruttato al 100%",
-    "bullet2": "Concierge sanitario umano, non un call center",
+    "bullet2": "Consulente sanitario umano, non un call center",
     "bullet3": "Oltre l'80% dei dipendenti fa prevenzione",
     "cta": "PARLA CON NOI",
     "ctaSecondary": "SCOPRI LA PIATTAFORMA"
@@ -305,9 +305,9 @@
         "imageAlt": "Interfaccia della ricerca intelligente sulle coperture sanitarie"
       },
       "card2": {
-        "title": "Concierge Sanitario umano",
+        "title": "Consulente Sanitario umano",
         "description": "Un canale di supporto umano e diretto. I nostri esperti guidano passo dopo passo i dipendenti nella risoluzione di dubbi complessi, nella prenotazione di visite e nella corretta richiesta di rimborsi.",
-        "imageAlt": "Esempio di conversazione con il Concierge Sanitario HeyLucy"
+        "imageAlt": "Esempio di conversazione con il Consulente Sanitario HeyLucy"
       },
       "card3": {
         "title": "Monitoraggio della prevenzione",
@@ -353,7 +353,7 @@
       },
       "q2": {
         "question": "Come funzionano le coperture extra insieme al fondo esistente?",
-        "answer": "In perfetta sinergia e senza sovrapposizioni. Identifichiamo le prestazioni escluse o scoperte dal tuo fondo di categoria e integriamo solo le polizze complementari necessarie. Per il dipendente l'esperienza è totalmente fluida: accede a un'unica piattaforma e parla con un solo Concierge, come se avesse una sola grande copertura."
+        "answer": "In perfetta sinergia e senza sovrapposizioni. Identifichiamo le prestazioni escluse o scoperte dal tuo fondo di categoria e integriamo solo le polizze complementari necessarie. Per il dipendente l'esperienza è totalmente fluida: accede a un'unica piattaforma e parla con un solo Consulente, come se avesse una sola grande copertura."
       },
       "q3": {
         "question": "Come fate a costare meno rispetto a una polizza sanitaria tradizionale?",
@@ -439,7 +439,7 @@
         "point3": "Ogni risposta indica il documento ufficiale da cui è presa, così puoi verificare"
       },
       "card2": {
-        "title": "Concierge Sanitario umano",
+        "title": "Consulente Sanitario umano",
         "lead": "Quando la burocrazia si blocca, ti risponde una persona vera.",
         "body": "Alle domande semplici risponde la piattaforma. Per i casi complicati c'è una persona in carne e ossa. Serve quando la clinica ti chiede di pagare una prestazione che il fondo dovrebbe coprire, oppure quando il modulo da compilare non si capisce. Tu scrivi, un nostro operatore prende in mano il problema e ti segue fino a quando è risolto.",
         "point1": "Scrivi su WhatsApp, senza installare nulla",

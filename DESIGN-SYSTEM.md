@@ -1211,7 +1211,7 @@ npx tsc -p tsconfig.node.json --noEmit   # la config di Vite
 | Prezzo su `PricingSection` | `pricing.annual.price` | Era 30 € riferito alle sole giornate di prevenzione, l'ho portato a ~250 € su tua indicazione «ovunque». Potrebbero essere due offerte diverse. Il componente non è montato su nessuna pagina, quindi il cambio è per ora inerte |
 | Copy hero di `/coperture` | `coperture.hero.subtitle` | Scritta da me, mai validata |
 | Titolo sezione `/coperture` | `coperture.section1.title` | Era «Analizziamo le coperture che hai già.», promossa a `h1` della pagina; la sezione ha preso «Cosa guardiamo nell'assessment» |
-| Concierge vs Consulente | `home.faq.q4` e `home.platform.card2` | Convivono le due parole. Scelta tua confermata due volte, non uniformare senza chiedere |
+| ~~Concierge vs Consulente~~ | risolto il 17 settembre 2026 | Il cliente ha chiesto **«Consulente» ovunque**: in `it.json` non c'e' piu' nessun «Concierge». In `en.json` e' diventato **«Advisor»**, perche' «Consulente» in inglese non si puo' lasciare. ⚠️ Se l'inglese deve tenere «Concierge», si cambia solo `en.json` |
 
 ### Debito tecnico ancora aperto
 
@@ -1276,3 +1276,25 @@ Le due schede basse hanno una striscia molto larga (596×144 da desktop, cioe' 4
 ⚠️ La pila di moduli (`problem-fondi-sanitari.jpg`) e' uscita dalla pagina: stava sulla 02 e il cliente ci ha voluto la foto nuova. Il file resta in `src/assets/` ma non lo usa piu' nessuno.
 
 ⚠️ `public/Assets sito/` sta dentro `public/`, quindi **gli originali finiscono anche nella build** (8,6 MB che nessuno scarica ma che vengono pubblicati). Se dà fastidio, la cartella va spostata fuori da `public/`, per esempio in `assets-sorgente/` alla radice: il sito non la importa, quindi non si rompe niente.
+
+## 19. Inquadrature degli hero e schede valore senza foto — 17 settembre 2026
+
+### Le due fotografie hanno la tela allargata a specchio
+
+Il problema: con `object-cover` in un riquadro largo, la fotografia sta dentro per larghezza e la posizione orizzontale del soggetto **non si puo' spostare**, ne' con `object-position` ne' allargando l'immagine, perche' ogni spostamento costa altezza e taglia il soggetto. Misurato sulla home: per portare la ragazza dal 53% al 68% servivano 27 punti di larghezza in meno, che le tagliavano pugni e piedi.
+
+Soluzione: **estendere la tela con una copia specchiata** del bordo, prima di ridimensionare. Alla giunzione le due colonne coincidono, quindi la cucitura e' continua per costruzione e resta invisibile.
+
+- **Home** (`hero-home.webp`, 1800×1619, 214 KB): 1650px di muro specchiato aggiunti **a sinistra**, la ragazza passa dal 53% al 67% della larghezza. ⚠️ 1650 e non di piu': lei comincia a 1730px e uno specchio piu' largo ne copiava un pezzo, che ricompariva come fantasma sul bordo sinistro
+- **Come funziona** (`hero-come-funziona.webp`, 2200×996, 84 KB): 1124px di sedie specchiate aggiunti a un lato e poi **tutta la fotografia specchiata**, cosi' l'uomo finisce al 78% della larghezza, cioe' a destra, e la scatola del testo torna a sinistra come nel resto del sito. Le sedie sono tutte uguali, quindi la fila allungata si legge come una fila normale
+- Contrasto del testo bianco sulla home ricontrollato dopo il cambio: **5,7:1 mediano, 5,25:1 minimo** fra desktop e mobile
+
+L'uomo di «Come funziona» cade a meta' dello spazio libero fra la scatola del testo e il bordo destro, con un solo `object-[78%_top]` valido a tutte le larghezze: misurato 1195 contro 1196 a 1536, 1120 contro 1121 a 1440, 995 contro 996 a 1280, 795 contro 797 a 1024. ⚠️ A 768 lo spazio libero e' 168px e non ci sta: li' resta appoggiato al bordo della scatola, ed e' comunque meglio del ritaglio centrato, che a quella larghezza lo porterebbe **fuori dallo schermo**.
+
+### Schede valore di «Come funziona»: niente fotografie
+
+Le tre voci sono ora tre schede uguali, `md:grid-cols-3`, con il numero grande in `font-display` al posto dell'immagine e un filetto corto da 48px a fare da stacco.
+
+⚠️ La griglia asimmetrica con le foto (due strisce alte 144px piu' una scheda alta) e' stata **tolta su richiesta**: in una striscia cosi' bassa ogni fotografia usciva schiacciata. Non rimetterla.
+
+`valore-welfare.webp` e `tempo-liberato.webp` restano in `src/assets/` ma non li usa piu' nessuno: erano nate per quelle schede. Non pesano sul build, che impacchetta solo i file importati.
