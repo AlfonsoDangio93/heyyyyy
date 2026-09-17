@@ -30,6 +30,11 @@ const burstPath = (spikes = 22, outer = 50, inner = 41.5) => {
  * 1440: centro della nota a 1203px, centro della fetta a 1182px).
  */
 const CurvedArrow = ({ className = "" }: { className?: string }) => (
+  // ⚠️ Questo e' il disegno buono, scelto dal cliente. Ne sono stati provati
+  // altri due mentre la nota scendeva verso la barra, **entrambi scartati**:
+  // uno lungo il doppio con due curve opposte («troppo storta») e uno lungo
+  // con un arco solo. Per farla scendere si allunga lo stacco sopra, non la
+  // freccia.
   <svg viewBox="0 0 56 100" fill="none" aria-hidden="true" className={className}>
     <path d="M38 6C46 34 26 48 24 88" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
     <path d="M24 88 13 68M24 88 37 73" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
@@ -163,7 +168,11 @@ const CoverageExtraSection = () => {
           </div>
         </Reveal>
 
-        <Reveal delay={260} threshold={0} className="mt-5 hidden md:block">
+        {/* ⚠️ Lo stacco dal sole e' grande apposta: nota e freccia scendono
+            fin sopra la barra, cosi' la punta indica la fetta crema invece di
+            restare a mezz'aria. Misurato: la punta cade fra 3 e 20px
+            sopra il bordo della fetta, secondo la larghezza. Cambiando l'altezza del sole o del grafico va rifatto. */}
+        <Reveal delay={260} threshold={0} className="mt-48 hidden md:block">
           <HandNote text={t("home.coverageExtra.note")} />
         </Reveal>
       </div>
