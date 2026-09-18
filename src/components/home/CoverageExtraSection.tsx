@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Check, Plus } from "lucide-react";
+import { Check } from "lucide-react";
 import SectionHeading from "@/components/home/SectionHeading";
 import Reveal from "@/components/Reveal";
 import Logo from "@/components/Logo";
@@ -103,8 +103,6 @@ const CoverageExtraSection = () => {
   const reduced = useReducedMotion();
   const { t } = useTranslation();
 
-  const [extrasOn, setExtrasOn] = useState(true);
-  const [hovered, setHovered] = useState(false);
   const [extrasIn, setExtrasIn] = useState(false);
 
   const grown = chartVisible || reduced;
@@ -122,11 +120,7 @@ const CoverageExtraSection = () => {
     return () => window.clearTimeout(id);
   }, [grown, reduced]);
 
-  const fullWidth = grown
-    ? extrasIn && extrasOn
-      ? BASE_WIDTH + EXTRA_WIDTH
-      : BASE_WIDTH
-    : 0;
+  const fullWidth = grown ? (extrasIn ? BASE_WIDTH + EXTRA_WIDTH : BASE_WIDTH) : 0;
   const motion = reduced ? "" : "transition-[width,flex-grow] duration-700 ease-reveal";
 
   return (
@@ -227,10 +221,9 @@ const CoverageExtraSection = () => {
                     <div
                       className={cn(
                         "h-full bg-accent shadow-[inset_1px_0_0_hsl(var(--primary)/0.35)]",
-                        hovered ? "brightness-105" : "",
-                        reduced ? "" : "transition-[flex-grow,filter] duration-700 ease-reveal",
+                        reduced ? "" : "transition-[flex-grow] duration-700 ease-reveal",
                       )}
-                      style={{ flexGrow: extrasOn ? EXTRA_WIDTH : 0, flexBasis: 0 }}
+                      style={{ flexGrow: EXTRA_WIDTH, flexBasis: 0 }}
                     />
                   </div>
                 </div>
@@ -249,37 +242,20 @@ const CoverageExtraSection = () => {
                     </span>
                   </span>
 
-                  {/* Unico comando: la pastiglia fa da legenda del crema e da
-                      interruttore delle integrazioni. Il contenitore e'
-                      `relative` perche' ci appoggia sopra l'etichetta che
-                      segue il mouse. */}
-                  {/* Unico comando: la pastiglia fa da legenda del crema e da
-                      interruttore delle integrazioni. */}
-                  <button
-                    type="button"
-                    aria-pressed={extrasOn}
-                    onClick={() => setExtrasOn((on) => !on)}
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}
-                    onFocus={() => setHovered(true)}
-                    onBlur={() => setHovered(false)}
-                    className={cn(
-                      "flex items-center gap-1 rounded-pill border px-2.5 py-1 text-[11px] font-semibold md:min-h-[44px] md:gap-2 md:px-4 md:py-2 md:text-fluid-sm transition-[background-color,border-color,color,transform] duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary",
-                      extrasOn
-                        ? "border-accent bg-accent text-primary"
-                        : "border-accent/40 bg-transparent text-accent/80 hover:border-accent/70 hover:text-accent",
-                    )}
-                  >
-                    {extrasOn ? <Check className="h-3 w-3 md:h-4 md:w-4" /> : <Plus className="h-3 w-3 md:h-4 md:w-4" />}
+                  {/* ⚠️ Non e' un comando: e' la legenda della fetta crema,
+                      sempre accesa. Era un interruttore che toglieva e
+                      rimetteva le integrazioni, **tolto su richiesta** insieme
+                      alla riga d'istruzioni che lo spiegava. Niente `button`,
+                      niente stato, niente `hover`: la barra resta aperta e la
+                      pastiglia resta selezionata. */}
+                  <span className="flex items-center gap-1 rounded-pill border border-accent bg-accent px-2.5 py-1 text-[11px] font-semibold text-primary md:gap-2 md:px-4 md:py-2 md:text-fluid-sm">
+                    <Check className="h-3 w-3 md:h-4 md:w-4" />
                     {t("home.coverageExtra.legendExtra")}
-                  </button>
+                  </span>
                 </div>
 
                 {/* ⚠️ Qui c'era «Tocca per togliere o rimettere le integrazioni»,
-                    tolta su richiesta: faceva solo confusione. La pastiglia si
-                    vede gia' che e' un comando (bordo, spunta, sollevamento al
-                    passaggio) e porta `aria-pressed`, quindi lo stato resta
-                    leggibile anche a chi usa uno screen reader. */}
+                    tolta su richiesta insieme al comando che spiegava. */}
               </div>
             </div>
           </div>

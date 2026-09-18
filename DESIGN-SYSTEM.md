@@ -1303,4 +1303,6 @@ Le tre voci sono ora tre schede uguali, `md:grid-cols-3`, con il numero grande i
 
 «Tocca per togliere o rimettere le integrazioni» e' stata **tolta** (18 settembre 2026): faceva confusione invece di aiutare. La chiave `home.coverageExtra.hint` e' uscita da tutti e due i file di lingua, la parita' scende a 287.
 
-⚠️ Non rimetterla: la pastiglia si vede gia' che e' un comando (bordo, spunta, sollevamento al passaggio) e porta `aria-pressed`, quindi lo stato resta leggibile anche con uno screen reader. E' la quarta cosa tolta da questa sezione dopo il cursore a faccina, l'etichetta che seguiva il mouse e il fumetto agganciato al bottone.
+Subito dopo e' caduto anche il comando: **la pastiglia «Integrazioni ad hoc» non e' piu' cliccabile.** Ora e' uno `span` di legenda, sempre acceso, e la barra resta aperta su base piu' integrazioni. Niente stato, niente `hover`, niente `aria-pressed`: non c'e' piu' niente da comandare.
+
+⚠️ Non rimettere ne' la riga ne' l'interruttore. L'animazione che conta e' rimasta: allo scroll cresce prima la base e dopo 700ms entra la fetta crema. E' la quinta e la sesta cosa tolte da questa sezione, dopo il cursore a faccina, l'etichetta che seguiva il mouse, il fumetto agganciato al bottone e le tre pastiglie con le prestazioni.
