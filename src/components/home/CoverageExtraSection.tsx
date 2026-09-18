@@ -236,7 +236,7 @@ const CoverageExtraSection = () => {
                 </div>
               </div>
 
-              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:pl-52">
+              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:pl-52">
                 {/* ⚠️ Sotto `md` legenda e pastiglia stanno **sulla stessa riga**: sono
                     300px disponibili e alle misure del desktop la somma faceva
                     339, quindi la pastiglia andava a capo. Corpo a 12px, passo
@@ -275,7 +275,11 @@ const CoverageExtraSection = () => {
                   </button>
                 </div>
 
-<p className="text-[11px] text-accent/80 md:text-fluid-sm">{t("home.coverageExtra.hint")}</p>
+                {/* ⚠️ Qui c'era «Tocca per togliere o rimettere le integrazioni»,
+                    tolta su richiesta: faceva solo confusione. La pastiglia si
+                    vede gia' che e' un comando (bordo, spunta, sollevamento al
+                    passaggio) e porta `aria-pressed`, quindi lo stato resta
+                    leggibile anche a chi usa uno screen reader. */}
               </div>
             </div>
           </div>

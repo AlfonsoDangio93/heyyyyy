@@ -1298,3 +1298,9 @@ Le tre voci sono ora tre schede uguali, `md:grid-cols-3`, con il numero grande i
 ⚠️ La griglia asimmetrica con le foto (due strisce alte 144px piu' una scheda alta) e' stata **tolta su richiesta**: in una striscia cosi' bassa ogni fotografia usciva schiacciata. Non rimetterla.
 
 `valore-welfare.webp` e `tempo-liberato.webp` restano in `src/assets/` ma non li usa piu' nessuno: erano nate per quelle schede. Non pesano sul build, che impacchetta solo i file importati.
+
+### Coperture extra: via anche la riga d'istruzioni
+
+«Tocca per togliere o rimettere le integrazioni» e' stata **tolta** (18 settembre 2026): faceva confusione invece di aiutare. La chiave `home.coverageExtra.hint` e' uscita da tutti e due i file di lingua, la parita' scende a 287.
+
+⚠️ Non rimetterla: la pastiglia si vede gia' che e' un comando (bordo, spunta, sollevamento al passaggio) e porta `aria-pressed`, quindi lo stato resta leggibile anche con uno screen reader. E' la quarta cosa tolta da questa sezione dopo il cursore a faccina, l'etichetta che seguiva il mouse e il fumetto agganciato al bottone.
